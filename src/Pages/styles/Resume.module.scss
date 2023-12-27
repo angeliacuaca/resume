@@ -1,0 +1,13 @@
+/**
+ * modified from https://codepen.io/levise/pen/vMzEwr
+ */
+
+@import "../../styles/variables";
+
+.Resume {
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: $pattern-height 1fr $pattern-height;
+  }
+}
