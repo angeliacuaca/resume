@@ -1,0 +1,36 @@
+@import "../../styles/_variables";
+
+.Content {
+  padding: 0 4rem;
+
+  .contentContainer {
+    display: grid;
+    height: calc(100% - 210px);
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.Footer {
+  display: flex;
+
+  align-items: center;
+  padding: 1rem;
+  background-color: $textBgColor;
+  color: $color;
+  font-size: 1.25rem;
+  font-weight: 400;
+  box-shadow: $boxShadow;
+  padding-left: 2.5rem;
+  background-image: linear-gradient(
+    90deg,
+    rgba($color, 1),
+    rgba($color, 1) 14px,
+    transparent 14px,
+    transparent 20px,
+    rgba($color, 1) 20px,
+    rgba($color, 1) 23px,
+    transparent 23px
+  );
+}
