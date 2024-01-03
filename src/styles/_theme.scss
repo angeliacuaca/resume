@@ -1,0 +1,21 @@
+:root {
+  --h3-margin: 1rem;
+  --background: #c8c2aa;
+  --text-color: 77, 73, 62;
+  --line-height: normal;
+}
+
+[data-page="print"] {
+  --background: rgb(229 227 220);
+  --max-width: 800px;
+  --small-screen: 600px;
+  --line-height: 1.6;
+}
+
+@media print {
+  :root {
+    --background: none;
+    --h3-margin: 0.5rem;
+    --text-color: 0, 0, 0;
+  }
+}

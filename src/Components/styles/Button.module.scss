@@ -1,14 +1,12 @@
 @import "../../styles/_variables";
 
-.Button {
-}
 button {
   cursor: pointer;
   font: inherit;
   border: none;
   padding: 0.4rem 1rem;
   background-color: rgba($color, 0.35);
-  color: $color;
+  color: rgb($color);
   box-sizing: content-box;
   position: relative;
   border: 1px solid transparent;
@@ -23,7 +21,7 @@ button {
     top: 3px;
     bottom: 3px;
     width: 0;
-    background-color: $color;
+    background-color: rgb($color);
     transition: width 0.2s;
   }
 
@@ -31,7 +29,7 @@ button {
     content: "";
     display: none;
     position: absolute;
-    background: $color;
+    background: rgb($color);
     width: 100%;
     height: 2px;
     left: 0;
@@ -42,7 +40,7 @@ button {
   &:focus {
     background-color: transparent;
     color: $bgColor;
-    border-color: $color;
+    border-color: rgb($color);
 
     &::before {
       width: 100%;

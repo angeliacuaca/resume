@@ -15,9 +15,9 @@ export type ActiveMenu =
 const MENU = {
   about: "About",
   skills: "Skills",
-  education: "Education",
   "work-history": "Work History",
   projects: "Projects",
+  education: "Education",
   referees: "Referees",
 }
 

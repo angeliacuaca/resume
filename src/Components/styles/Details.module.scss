@@ -3,6 +3,7 @@
 .Details {
   display: grid;
   grid-template-rows: auto 1fr;
+  overflow: auto;
 
   &.shadow {
     box-shadow: $boxShadow;
@@ -11,7 +12,7 @@
 
 .header {
   background-color: $bgColor-250;
-  color: $color;
+  color: rgb($color);
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   font-weight: 400;
@@ -21,8 +22,17 @@
   }
 }
 
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .body {
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   background-color: $textBgColor;
   font-size: 1rem;
   line-height: 1.6;

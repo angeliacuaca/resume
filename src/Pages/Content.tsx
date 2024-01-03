@@ -8,39 +8,59 @@ import { WorkHistory } from "./WorkHistory"
 import { Referees } from "./Referees"
 import { SideBar, ActiveMenu } from "../Components/Sidebar"
 import { Projects } from "./Projects"
+import about from "../data/about.json"
 
-const COL_MAP = {
-  about: 1,
-  skills: 1,
-  education: 2,
-  "work-history": 2,
-  projects: 2,
-  referees: 1,
+const MENU_MAP = {
+  about: { cols: 1, component: <About /> },
+  skills: { cols: 1, component: <Skills /> },
+  "work-history": { cols: 2, component: <WorkHistory /> },
+  education: { cols: 2, component: <Education /> },
+  projects: { cols: 2, component: <Projects /> },
+  referees: { cols: 1, component: <Referees /> },
 }
 
-export const Content: React.FC<{}> = (props) => {
+export const Content: React.FC<{}> = () => {
   const [activeMenu, setActiveMenu] = useState<ActiveMenu>("about")
 
   return (
     <div className={styles.Content}>
-      <Header title="Angelia Cuaca" subtitle="Frontend Engineer" />
+      <Header title={about.name} subtitle={about.title} />
 
       <div
         className={styles.contentContainer}
         style={{
-          gridTemplateColumns: `300px repeat(${COL_MAP[activeMenu]}, 1fr)`,
+          gridTemplateColumns: `300px repeat(${MENU_MAP[activeMenu].cols}, 1fr)`,
         }}
       >
         <SideBar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
-        {activeMenu === "about" && <About />}
-        {activeMenu === "skills" && <Skills />}
-        {activeMenu === "education" && <Education />}
-        {activeMenu === "work-history" && <WorkHistory />}
-        {activeMenu === "projects" && <Projects />}
-        {activeMenu === "referees" && <Referees />}
+        {MENU_MAP[activeMenu].component}
       </div>
 
-      <div className={styles.Footer}>For print friendly version</div>
+      <div className={styles.Footer}>
+        <a target="_blank" href="/print">
+          Print version
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.platinumgames.com/official-blog/article/9624"
+        >
+          GitHub for this resume
+        </a>
+        <div>
+          <small>
+            Design inspiration:
+            <br />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.platinumgames.com/official-blog/article/9624"
+            >
+              NieR:Automata
+            </a>
+          </small>
+        </div>
+      </div>
     </div>
   )
 }

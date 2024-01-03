@@ -11,3 +11,13 @@ export const Referees: React.FC<{}> = (props) => {
     </Details>
   )
 }
+
+export const Print: React.FC<{}> = () => {
+  return (
+    <section>
+      <h3>Referees</h3>
+      <hr />
+      <p>Referees available upon request.</p>
+    </section>
+  )
+}

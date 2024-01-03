@@ -1,0 +1,31 @@
+{
+  "cs": {
+    "title": "Creator Studio - CAPTUR3D",
+    "description": "CAPTUR3D's <a href='https://captur3d.io/features#virtual-staging-feature'>Creator Studio</a> is a comprehensive platform designed for professionals to create, edit, and manage their 3D virtual tours. Users can capture, upload, and customize their virtual content with tools that allow for the integration, tag annotations, and other interactive elements to enhance the 3D tour experience from 3D furniture, 3D animated objects to Digital Twin and overlay layout for brandings.",
+    "responsibilities": [
+      "Initiated.",
+      "Developed a solution to provide shadow in 360 panorama.",
+      "Developed a web-based application for VR/AR content management system."
+    ],
+    "link": "https://captur3d.io/features#virtual-staging-feature"
+  },
+  "layoutEngine": {
+    "title": "Layout Engine - CAPTUR3D",
+    "description": "CAPTUR3D's Layout Engine is a feature in Creator Studio that empowers users to design and modify the 2D overlay layout of their virtual tours effortlessly. Users have the flexibility to tailor numerous elements, ranging from the sidebar menu, logo positioning, and color schemes to background colors and typography, ensuring their virtual tours align perfectly with their brand aesthetics. Furthermore, the client-side preview is designed to be responsive across a myriad of devices, guaranteeing optimal viewing experiences across various online platforms and devices.",
+    "responsibilities": [
+      "Created a fontloader to load fonts from Google Fonts on demand.",
+      "Planned and architected the Layout Engine with 2-dimensional arrays approach to handle positioning of the elements.",
+      "Developed a web-based application for VR/AR content management system."
+    ],
+    "link": "https://captur3d.io/features#virtual-tour-feature"
+  },
+  "mtp": {
+    "title": "Music Therapy Platform",
+    "description": "A team project for web-based application about research-based practice and profession in which music is used to actively support people as they strive to improve their health, functioning and wellbeing.",
+    "responsibilities": [
+      "Assisted team in developing plans, ideas, business logic and weekly aims.",
+      "Responsible for all Front-End, HTML5, CSS, Javascripts developing including graphic, animation and responsive elements.",
+      "Designed interactive approach and development on therapy activities."
+    ]
+  }
+}

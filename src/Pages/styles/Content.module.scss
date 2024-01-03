@@ -14,15 +14,15 @@
 
 .Footer {
   display: flex;
-
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  margin-bottom: 1rem;
   background-color: $textBgColor;
-  color: $color;
-  font-size: 1.25rem;
+  color: rgb($color);
   font-weight: 400;
   box-shadow: $boxShadow;
-  padding-left: 2.5rem;
   background-image: linear-gradient(
     90deg,
     rgba($color, 1),
@@ -33,4 +33,9 @@
     rgba($color, 1) 23px,
     transparent 23px
   );
+
+  small {
+    text-align: right;
+    font-size: 0.7rem;
+  }
 }

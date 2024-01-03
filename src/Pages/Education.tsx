@@ -1,80 +1,60 @@
 import React, { Fragment, useState } from "react"
 import styles from "../Components/styles/List.module.scss"
 import { Details } from "../Components/Details"
-import { VerticalLine } from "../Components/VerticalLine"
 import { Button } from "../Components/Button"
 import { joinClasses } from "../helpers"
+import printStyles from "./styles/Print.module.scss"
+import education from "../data/education.json"
 
-const MENU_MAP = {
-  postgraduate: "Postgraduate",
-  undergraduate: "Undergraduate",
-  achievement: "Achievements",
-}
+type Menu = "py" | "postgraduate" | "undergraduate" | "achievement"
 
 export const Education: React.FC<{}> = (props) => {
-  const [activeMenu, setActiveMenu] = useState("undergraduate")
+  const [activeMenu, setActiveMenu] = useState<Menu>("py")
+
   return (
     <Fragment>
-      <VerticalLine>
+      <blockquote>
         <Details title="Education" shadow={true} className={styles.List}>
           <div className={styles.list}>
-            {Object.entries(MENU_MAP).map(([menu, label]) => (
+            {Object.entries(education).map(([menu, label]) => (
               <ListItem
                 active={activeMenu === menu}
                 onClick={() => {
-                  setActiveMenu(menu)
+                  setActiveMenu(menu as Menu)
                 }}
               >
-                {label}
+                <span>{label.title}</span>
+                <small>{label.year}</small>
               </ListItem>
             ))}
           </div>
         </Details>
-      </VerticalLine>
+      </blockquote>
 
-      {activeMenu === "postgraduate" && (
-        <Details title="Postgraduate">
+      {activeMenu === "achievement" ? (
+        <Details title={education.achievement.title}>
           <div className={styles.body}>
-            <p>RMIT University</p>
-            <p>Master’s Degree, Information Technology</p>
-            <hr />
-            <p>Grade: with High Distinction</p>
-            <p>Activities and societies: Outdoor Club</p>
             <p>
-              Study focus more on Mobile Developing (iOS and Android) also Web
-              (Front-End/Back-End) Developing.
+              {education.achievement.description}
+              <ul>
+                {education.achievement.awards.map((award) => (
+                  <li key={award.title}>
+                    {award.title}
+                    <br />
+                    {award.description}
+                  </li>
+                ))}
+              </ul>
             </p>
           </div>
         </Details>
-      )}
-      {activeMenu === "undergraduate" && (
-        <Details title="Undergraduate">
+      ) : (
+        <Details title={education[activeMenu].title}>
           <div className={styles.body}>
-            <p>RMIT University</p>
-            <p>Bachelor's Degree, Animation and Interactive Media</p>
+            <p>{education[activeMenu].degree}</p>
+            <p>{education[activeMenu].institution}</p>
             <hr />
-            <p>
-              I did more on 3D animation mostly character animation and 3D
-              environmental modeling.
-            </p>
-          </div>
-        </Details>
-      )}
-      {activeMenu === "achievement" && (
-        <Details title="Achievement">
-          <div className={styles.body}>
-            <p>
-              agIdeas NewStar 2013 International Design Competition
-              <br />
-              Multimedia Entry finalist Melbourne Exhibition and Convention
-              Center – Melbourne, VIC.
-            </p>
-            <hr />
-            <p>
-              Best 3D Animation Production 2012
-              <br />
-              RMIT Graduation Screening at ACMI.
-            </p>
+            <p>{education[activeMenu].description}</p>
           </div>
         </Details>
       )}
@@ -95,5 +75,38 @@ const ListItem: React.FC<{
     >
       <Button>{children}</Button>
     </div>
+  )
+}
+
+export const Print: React.FC<{}> = () => {
+  return (
+    <section>
+      <h3>Education</h3>
+      <hr />
+      {Object.entries(education).map(([menu, edu]) =>
+        menu === "achievement" ? (
+          <div>
+            <p>{education.achievement.description}</p>
+            <ul>
+              {education.achievement.awards.map((award) => (
+                <li key={award.title}>
+                  {award.title}
+                  <br />
+                  {award.description}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <div className={printStyles.history}>
+            <p>{edu.year}</p>
+            <p>
+              <h5>{edu.degree}</h5>
+              {edu.institution}
+            </p>
+          </div>
+        )
+      )}
+    </section>
   )
 }

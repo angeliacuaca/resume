@@ -1,0 +1,22 @@
+{
+  "languages": ["TypeScript", "HTML5 & CSS", "JavaScript", "WebGL"],
+  "frameworks": [
+    "React.js",
+    "Three.js",
+    "Redux",
+    "PostgreSQL",
+    "Ruby on Rails"
+  ],
+  "others": [
+    "Proficient in crafting dynamic applications using JavaScript, HTML, CSS, React, Redux and TypeScript.",
+    "Comprehensive understanding of JavaScript and foundational web technologies.",
+    "Passionate about tackling challenging problems and finding joy in creating prototypes.",
+    "Adept at performance optimization, debugging, and benchmarking.",
+    "Skilled in crafting performant and reusable UI code, ensuring comprehensive testing across platforms and devices.",
+    "Deep understanding of core computer science principles, data structures, design patterns, and solution design.",
+    "Familiarity with SVG Manipulation, GLSL/WebGL and DOM animations.",
+    "Excellent written and interpersonal skills develop through presentation on products.",
+    "Self-driven, love challenges and fast learner.",
+    "Strong knowledge in animation (2D & 3D), graphic processing and video editing."
+  ]
+}

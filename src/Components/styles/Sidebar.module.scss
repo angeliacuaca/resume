@@ -19,7 +19,7 @@
 
     &.active {
       button {
-        background-color: $color;
+        background-color: rgb($color);
         color: $bgColor;
       }
 
@@ -35,7 +35,7 @@
       top: 3px;
       bottom: 3px;
       width: 0;
-      background-color: $color;
+      background-color: rgb($color);
       transition: width 0.2s;
     }
 
