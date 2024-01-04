@@ -1,0 +1,40 @@
+{
+  "py": {
+    "title": "ACS Professional Year",
+    "year": "Jan 2017 – Nov 2017",
+    "institution": "Navitas Professional",
+    "degree": "Professional Year Program, Information Technology",
+    "description": "The ACS Professional Year Program in ICT is a 44-52 week course (including 12 weeks of internship) designed to enhance the employability skills of international students who have graduated from a university in Australia. The program aims to provide students with the skills and training they need to start a successful career in the Australian workforce."
+  },
+  "postgraduate": {
+    "title": "Postgraduate",
+    "year": "2015 – 2016",
+    "institution": "RMIT University",
+    "degree": " Master of Information Technology (Distinction)",
+    "description": "Study focus more on web full stack developing and mobile apps (iOS and Android)."
+  },
+  "undergraduate": {
+    "title": "Undergraduate",
+    "year": "2011 – 2014",
+    "institution": "RMIT University",
+    "degree": "Bachelor of Designs (Animation and Interactive Media)",
+    "description": "I did more on 3D animation mostly character animation and 3D environmental modeling."
+  },
+  "achievement": {
+    "title": "Achievements",
+    "description": "Award & Recognition:",
+    "year": "",
+    "degree": "",
+    "institution": "",
+    "awards": [
+      {
+        "title": "agIdeas NewStar 2013 International Design Competition.",
+        "description": "Multimedia Entry finalist Melbourne Exhibition and Convention Center – Melbourne, VIC."
+      },
+      {
+        "title": "Best 3D Animation Production 2012.",
+        "description": "RMIT Graduation Screening at ACMI."
+      }
+    ]
+  }
+}

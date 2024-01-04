@@ -1,0 +1,32 @@
+{
+  "cs": {
+    "title": "Creator Studio - Phoria",
+    "description": "<a href='https://captur3d.io/features#virtual-staging-feature'>Creator Studio</a> is one of the most complex features. It allows numerous integrations allowing users to customise their virtual content with tools to support tag annotations, media and other interactive elements to enhance the 3D tour experience from 3D furniture, 3D animated objects to Digital Twin.",
+    "responsibilities": [
+      "Helped kickstarting the feature and continue being the primary frontend developer. Using React, Typescript, later we incoporate Redux.",
+      "Delved into challenging issues related to texture, lighting, shadow, rendering, and post-processing.",
+      "Developed a solution to showcase shadow casted from custom 3D objects into 360 panorama.",
+      "Developed a solution to lasso tool to draw or select area in 3D space."
+    ],
+    "link": "https://captur3d.io/features#virtual-staging-feature"
+  },
+  "layoutEngine": {
+    "title": "Layout Engine - Phoria",
+    "description": "This feature is part of an editor tool that empowers users to design and modify the <a href='https://captur3d.io/features#virtual-tour-feature'>2D overlay layout</a> of their virtual tours effortlessly. <br/>Users have the flexibility to tailor numerous elements, ranging from the sidebar menu, logo positioning, and color schemes to background colors and typography, ensuring their virtual tours align perfectly with their brand aesthetics.",
+    "responsibilities": [
+      "Planned, prototyped and architected the Layout Engine system to handle dynamic positioning of the elements.",
+      "Developed a font loader optimised for performance, enabling on-demand loading of fonts from Google Fonts.",
+      "Ensured the client-side preview is designed to be responsive across a myriad of devices, guaranteeing optimal viewing experiences across various online platforms and devices."
+    ],
+    "link": "https://captur3d.io/features#virtual-tour-feature"
+  },
+  "mtp": {
+    "title": "Music Therapy Platform",
+    "description": "A team project for web-based application about research-based practice and profession in which music is used to actively support people as they strive to improve their health, functioning and wellbeing.",
+    "responsibilities": [
+      "Assisted team in developing plans, ideas, business logic and weekly aims.",
+      "Responsible for all Front-End, HTML5, CSS, Javascripts developing including graphic, animation and responsive elements.",
+      "Designed interactive approach and development on therapy activities."
+    ]
+  }
+}

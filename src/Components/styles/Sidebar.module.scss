@@ -1,0 +1,55 @@
+@import "../../styles/_variables";
+
+.Sidebar {
+  align-self: center;
+  i {
+    margin-right: 1rem;
+  }
+  button {
+    max-width: 200px;
+    text-align: left;
+    margin: 1rem;
+    width: 100%;
+    display: block;
+    letter-spacing: 0.2rem;
+  }
+
+  .sidebarItem {
+    position: relative;
+
+    &.active {
+      button {
+        background-color: rgb($color);
+        color: $bgColor;
+      }
+
+      &::before {
+        content: "";
+      }
+    }
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 3px;
+      bottom: 3px;
+      width: 0;
+      background-color: rgb($color);
+      transition: width 0.2s;
+    }
+
+    &:hover {
+      &::before {
+        font: var(--fa-font-solid);
+        content: "\f101";
+        left: -10px;
+        top: 10px;
+      }
+    }
+    &::after {
+      content: "";
+      display: none;
+    }
+  }
+}

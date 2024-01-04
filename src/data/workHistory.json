@@ -1,0 +1,65 @@
+{
+  "senior": {
+    "title": "Senior Software Engineer",
+    "year": "Nov 2023 - Now",
+    "company": "PHORIA",
+    "responsibilities": [
+      "Exhibit proactive leadership and ownership, driving improvements in processes, solutions, and goal attainment.",
+      "Explore technologies to enhance current functionalities and introduce new features.",
+      "Ownership on most Creator Studio's feature, specifically on 2D Overlay.",
+      "Mentor junior developers, enhancing their coding skills and fostering best practices.",
+      "Develop enhanced tools with better performance and optimisation.",
+      "Manage the transitioning of new branding that'll change the whole core colour."
+    ]
+  },
+  "mid": {
+    "title": "Software Engineer",
+    "year": "Dec 2019 - Nov 2023",
+    "company": "PHORIA",
+    "responsibilities": [
+      "Played a key role in initiating the development of the company's most intricate editor tool, Creator Studio.",
+      "Optimised the onboarding system, refining processes and tools to boost the development pipeline for subsequent onboarding phases, ensuring smoother transitions and improved efficiency.",
+      "Actively engaged in engineering strategy discussions and code review.",
+      "Architected and implemented reusable frontend components, including styleguide library with a keen focus on scalability and extensibility.",
+      "Addressed intricate challenges for web3D problem and be the team's expert on web3D solutions.",
+      "Developed a drag-and-drop template builders, enabling users to easily arrange elements on their virtual tour and one-page property website.",
+      "Ensured frontend reliability with thorough testing, optimising user experience across browsers and devices.",
+      "Participated in big projects like new sign-up flow, payment flow, and rebrand."
+    ]
+  },
+  "junior": {
+    "title": "Junior Developer",
+    "year": "Nov 2017 - Dec 2019",
+    "company": "PHORIA",
+    "responsibilities": [
+      "Collaborated with senior developers to implement new features.",
+      "Actively Participated in the full software development cycle, collaborating with the developer team, designers and product manager to launch features.",
+      "Managed and oversaw the 3 company's static websites."
+    ]
+  },
+  "intern": {
+    "title": "Intern Developer",
+    "year": "Aug 2017 - Nov 2017",
+    "company": "PHORIA",
+    "responsibilities": [
+      "Migrated the company's static website from Squarespace to a proprietary hosting solution.",
+      "Built the company's refreshed public-facing static website with a new design and brand identity."
+    ]
+  },
+  "ohm": {
+    "title": "Building Volunteer",
+    "year": "2015 - 2022",
+    "company": "Open House Melbourne",
+    "responsibilities": [
+      "Assisted visitors with information as well as recorded and reported visitors statistics."
+    ]
+  },
+  "rmit": {
+    "title": "Assistant Team Leader",
+    "year": "July 2013",
+    "company": "RMIT University",
+    "responsibilities": [
+      "Assisted team leader with mentoring a team of Year 11 and Year 12 students on creativity workshops for RMIT University Art & Design experience days."
+    ]
+  }
+}
