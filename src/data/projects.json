@@ -1,21 +1,22 @@
 {
   "cs": {
-    "title": "Creator Studio - CAPTUR3D",
-    "description": "CAPTUR3D's <a href='https://captur3d.io/features#virtual-staging-feature'>Creator Studio</a> is a comprehensive platform designed for professionals to create, edit, and manage their 3D virtual tours. Users can capture, upload, and customize their virtual content with tools that allow for the integration, tag annotations, and other interactive elements to enhance the 3D tour experience from 3D furniture, 3D animated objects to Digital Twin and overlay layout for brandings.",
+    "title": "Creator Studio - Phoria",
+    "description": "<a href='https://captur3d.io/features#virtual-staging-feature'>Creator Studio</a> is one of the most complex features. It allows numerous integrations allowing users to customise their virtual content with tools to support tag annotations, media and other interactive elements to enhance the 3D tour experience from 3D furniture, 3D animated objects to Digital Twin.",
     "responsibilities": [
-      "Initiated.",
-      "Developed a solution to provide shadow in 360 panorama.",
-      "Developed a web-based application for VR/AR content management system."
+      "Helped kickstarting the feature and continue being the primary frontend developer. Using React, Typescript, later we incoporate Redux.",
+      "Delved into challenging issues related to texture, lighting, shadow, rendering, and post-processing.",
+      "Developed a solution to showcase shadow casted from custom 3D objects into 360 panorama.",
+      "Developed a solution to lasso tool to draw or select area in 3D space."
     ],
     "link": "https://captur3d.io/features#virtual-staging-feature"
   },
   "layoutEngine": {
-    "title": "Layout Engine - CAPTUR3D",
-    "description": "CAPTUR3D's Layout Engine is a feature in Creator Studio that empowers users to design and modify the 2D overlay layout of their virtual tours effortlessly. Users have the flexibility to tailor numerous elements, ranging from the sidebar menu, logo positioning, and color schemes to background colors and typography, ensuring their virtual tours align perfectly with their brand aesthetics. Furthermore, the client-side preview is designed to be responsive across a myriad of devices, guaranteeing optimal viewing experiences across various online platforms and devices.",
+    "title": "Layout Engine - Phoria",
+    "description": "This feature is part of an editor tool that empowers users to design and modify the <a href='https://captur3d.io/features#virtual-tour-feature'>2D overlay layout</a> of their virtual tours effortlessly. <br/>Users have the flexibility to tailor numerous elements, ranging from the sidebar menu, logo positioning, and color schemes to background colors and typography, ensuring their virtual tours align perfectly with their brand aesthetics.",
     "responsibilities": [
-      "Created a fontloader to load fonts from Google Fonts on demand.",
-      "Planned and architected the Layout Engine with 2-dimensional arrays approach to handle positioning of the elements.",
-      "Developed a web-based application for VR/AR content management system."
+      "Planned, prototyped and architected the Layout Engine system to handle dynamic positioning of the elements.",
+      "Developed a font loader optimised for performance, enabling on-demand loading of fonts from Google Fonts.",
+      "Ensured the client-side preview is designed to be responsive across a myriad of devices, guaranteeing optimal viewing experiences across various online platforms and devices."
     ],
     "link": "https://captur3d.io/features#virtual-tour-feature"
   },

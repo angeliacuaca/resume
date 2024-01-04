@@ -63,7 +63,7 @@ blockquote {
 a {
   display: inline-block;
   text-decoration: none;
-  color: rgb($color);
+  color: var(--accent-color);
   font-size: 1rem;
   border-radius: 10px;
   transition: opacity 0.5s ease, border 0.5s ease, background-color 0.5s ease,
@@ -86,9 +86,32 @@ a {
     left: 0;
     bottom: -1px;
     height: 2px;
-    background-color: rgb($color);
+    background-color: var(--accent-color);
     width: 0;
     transition: width 0.7s;
+  }
+
+  &.with-icon {
+    color: rgb($color);
+
+    &:hover {
+      color: var(--accent-color);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      &:after {
+        width: 0;
+      }
+    }
+  }
+}
+
+ul {
+  &.no-bullet {
+    list-style: none;
+    padding-inline-start: 1rem;
   }
 }
 
@@ -136,5 +159,6 @@ p {
   p,
   li {
     font-size: 12px !important;
+    color: black;
   }
 }

@@ -40,14 +40,8 @@ export const Content: React.FC<{}> = () => {
         <a target="_blank" href="/print">
           Print version
         </a>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.platinumgames.com/official-blog/article/9624"
-        >
-          GitHub for this resume
-        </a>
-        <div>
+
+        <div className={styles.right}>
           <small>
             Design inspiration:
             <br />
@@ -59,6 +53,15 @@ export const Content: React.FC<{}> = () => {
               NieR:Automata
             </a>
           </small>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/angeliacuaca/resume"
+            title="View this page on GitHub"
+            className="with-icon"
+          >
+            <i className="fa-brands fa-square-github fa-2xl" />
+          </a>
         </div>
       </div>
     </div>

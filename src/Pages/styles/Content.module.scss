@@ -34,8 +34,13 @@
     transparent 23px
   );
 
-  small {
-    text-align: right;
-    font-size: 0.7rem;
+  .right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    small {
+      text-align: right;
+      font-size: 0.7rem;
+    }
   }
 }

@@ -11,6 +11,19 @@
   line-height: 1.6;
   overflow: auto;
 
+  &::-webkit-scrollbar {
+    width: 0.2em;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb($color);
+    outline: 1px solid rgb($color);
+  }
+
   button {
     width: 100%;
     text-align: left;
@@ -82,4 +95,17 @@
   font-size: 1rem;
   line-height: 1.6;
   overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 0.2em;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb($color);
+    outline: 1px solid rgb($color);
+  }
 }

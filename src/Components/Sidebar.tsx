@@ -31,6 +31,7 @@ export const SideBar: React.FC<{
       <blockquote>
         {Object.entries(MENU).map(([menu, label]) => (
           <SideBarItem
+            key={menu}
             active={activeMenu === menu}
             onClick={() => {
               setActiveMenu(menu as ActiveMenu)

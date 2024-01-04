@@ -18,6 +18,9 @@
     }
     ul {
       margin-top: 0.5rem;
+      @media screen and (max-width: 600px) {
+        padding-inline-start: 1rem;
+      }
     }
   }
 
@@ -46,6 +49,9 @@
   }
   .mb2 {
     margin-bottom: 2rem;
+  }
+  .mb3 {
+    margin-bottom: 3rem;
   }
 
   .history {
@@ -88,19 +94,4 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
-  // .grid3 {
-  //   display: grid;
-  //   grid-template-columns: repeat(3, 1fr);
-
-  //   :nth-child(1) {
-  //     text-align: left;
-  //   }
-  //   :nth-child(2) {
-  //     text-align: center;
-  //   }
-  //   :nth-child(3) {
-  //     text-align: right;
-  //   }
-  // }
 }

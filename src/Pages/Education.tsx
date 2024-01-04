@@ -18,6 +18,7 @@ export const Education: React.FC<{}> = (props) => {
           <div className={styles.list}>
             {Object.entries(education).map(([menu, label]) => (
               <ListItem
+                key={menu}
                 active={activeMenu === menu}
                 onClick={() => {
                   setActiveMenu(menu as Menu)
@@ -34,18 +35,16 @@ export const Education: React.FC<{}> = (props) => {
       {activeMenu === "achievement" ? (
         <Details title={education.achievement.title}>
           <div className={styles.body}>
-            <p>
-              {education.achievement.description}
-              <ul>
-                {education.achievement.awards.map((award) => (
-                  <li key={award.title}>
-                    {award.title}
-                    <br />
-                    {award.description}
-                  </li>
-                ))}
-              </ul>
-            </p>
+            <p>{education.achievement.description} </p>
+            <ul>
+              {education.achievement.awards.map((award) => (
+                <li key={award.title}>
+                  {award.title}
+                  <br />
+                  {award.description}
+                </li>
+              ))}
+            </ul>
           </div>
         </Details>
       ) : (
@@ -83,9 +82,9 @@ export const Print: React.FC<{}> = () => {
     <section>
       <h3>Education</h3>
       <hr />
-      {Object.entries(education).map(([menu, edu]) =>
+      {Object.entries(education).map(([menu, edu], index) =>
         menu === "achievement" ? (
-          <div>
+          <div key={index}>
             <p>{education.achievement.description}</p>
             <ul>
               {education.achievement.awards.map((award) => (
@@ -98,12 +97,12 @@ export const Print: React.FC<{}> = () => {
             </ul>
           </div>
         ) : (
-          <div className={printStyles.history}>
+          <div key={index} className={printStyles.history}>
             <p>{edu.year}</p>
-            <p>
+            <div>
               <h5>{edu.degree}</h5>
               {edu.institution}
-            </p>
+            </div>
           </div>
         )
       )}

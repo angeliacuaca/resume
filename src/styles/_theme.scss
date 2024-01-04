@@ -3,6 +3,8 @@
   --background: #c8c2aa;
   --text-color: 77, 73, 62;
   --line-height: normal;
+
+  --accent-color: rgb(172 55 26);
 }
 
 [data-page="print"] {
@@ -10,6 +12,7 @@
   --max-width: 800px;
   --small-screen: 600px;
   --line-height: 1.6;
+  --accent-color: rgb(77, 73, 62);
 }
 
 @media print {
@@ -17,5 +20,6 @@
     --background: none;
     --h3-margin: 0.5rem;
     --text-color: 0, 0, 0;
+    --accent-color: rgb(0, 0, 0);
   }
 }

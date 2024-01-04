@@ -18,6 +18,7 @@ export const WorkHistory: React.FC<{}> = (props) => {
           <div className={styles.list}>
             {Object.entries(workHistory).map(([menu, label]) => (
               <ListItem
+                key={menu}
                 active={activeMenu === menu}
                 onClick={() => {
                   setActiveMenu(menu as Menu)
@@ -36,13 +37,12 @@ export const WorkHistory: React.FC<{}> = (props) => {
           <p>{workHistory[activeMenu].company}</p>
           <p>{workHistory[activeMenu].year}</p>
           <hr />
-          <p>
-            <ul>
-              {workHistory[activeMenu].responsibilities.map((desc, index) => (
-                <li key={index}>{desc}</li>
-              ))}
-            </ul>
-          </p>
+
+          <ul>
+            {workHistory[activeMenu].responsibilities.map((desc, index) => (
+              <li key={index}>{desc}</li>
+            ))}
+          </ul>
         </div>
       </Details>
     </Fragment>
@@ -70,22 +70,21 @@ export const Print: React.FC<{}> = () => {
     <section>
       <h3>Work History</h3>
       <hr />
-      {Object.entries(workHistory).map(([_, work]) => (
-        <div className={printStyles.mb2}>
+      {Object.entries(workHistory).map(([_, work], index) => (
+        <div key={index} className={printStyles.mb3}>
           <div className={printStyles.history}>
             <p>{work.year}</p>
-            <p>
+            <div>
               <h5>{work.title}</h5>
               {work.company}
-            </p>
+            </div>
           </div>
-          <p>
-            <ul>
-              {work.responsibilities.map((desc, index) => (
-                <li key={index}>{desc}</li>
-              ))}
-            </ul>
-          </p>
+
+          <ul>
+            {work.responsibilities.map((desc, index) => (
+              <li key={index}>{desc}</li>
+            ))}
+          </ul>
         </div>
       ))}
     </section>

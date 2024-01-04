@@ -18,6 +18,7 @@ export const Projects: React.FC<{}> = (props) => {
           <div className={styles.list}>
             {Object.entries(projects).map(([menu, label]) => (
               <ListItem
+                key={menu}
                 active={activeMenu === menu}
                 onClick={() => {
                   setActiveMenu(menu as Menu)
@@ -39,13 +40,11 @@ export const Projects: React.FC<{}> = (props) => {
           />
           <hr />
 
-          <p>
-            <ul>
-              {projects[activeMenu].responsibilities.map((desc, index) => (
-                <li key={index}>{desc}</li>
-              ))}
-            </ul>
-          </p>
+          <ul>
+            {projects[activeMenu].responsibilities.map((desc, index) => (
+              <li key={index}>{desc}</li>
+            ))}
+          </ul>
         </div>
       </Details>
     </Fragment>
@@ -73,19 +72,22 @@ export const Print: React.FC<{}> = () => {
     <section>
       <h3>Projects</h3>
       <hr />
-      {Object.entries(projects).map(([_, project]) => (
-        <div className={printStyles.mb2}>
+      {Object.entries(projects).map(([_, project], index) => (
+        <div key={index} className={printStyles.mb3}>
           <div className={printStyles.mb1}>
             <h4>{project.title}</h4>
           </div>
-          <p className={printStyles.mb1}>{project.description}</p>
-          <p>
-            <ul>
-              {project.responsibilities.map((desc, index) => (
-                <li key={index}>{desc}</li>
-              ))}
-            </ul>
-          </p>
+          <p
+            className={printStyles.mb1}
+            dangerouslySetInnerHTML={{
+              __html: project.description,
+            }}
+          />
+          <ul>
+            {project.responsibilities.map((desc, index) => (
+              <li key={index}>{desc}</li>
+            ))}
+          </ul>
         </div>
       ))}
     </section>
