@@ -13,6 +13,9 @@
   --small-screen: 600px;
   --line-height: 1.6;
   --accent-color: rgb(77, 73, 62);
+
+  background-size: unset;
+  background-image: unset;
 }
 
 @media print {
