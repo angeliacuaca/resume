@@ -4,7 +4,7 @@ This repository contains my resume I built for fun with Vercel and design inspir
 
 ## Introduction
 
-It has 2 pages, UI and flat version, all copies pulled from json from data folder to ensure the consistencies between two versions
+It has 2 pages, UI and flat/print version, all copies pulled from json from data folder to ensure the consistencies between two versions
 
 ## Installation
 
@@ -14,8 +14,8 @@ It has 2 pages, UI and flat version, all copies pulled from json from data folde
 
 2. Install dependencies
 
-### `npm i`
+   ### `npm i`
 
 3. To preview locally
 
-### `npm run start`
+   ### `npm run dev`
