@@ -8,7 +8,6 @@ import { WorkHistory } from "./WorkHistory"
 import { Referees } from "./Referees"
 import { Projects } from "./Projects"
 import about from "@/data/about.json"
-import Link from "next/link"
 
 const MENU_MAP = {
   about: { cols: 1, component: <About /> },
@@ -38,8 +37,8 @@ export const Content: React.FC<{}> = () => {
 
       <div className={styles.Footer}>
         <a href="/print">Print version</a>
-        {/* <Link href="/print">Home</Link> */}
-        <div className={styles.right}>
+
+        <div className={styles.flexItem}>
           <small>
             Design inspiration:
             <br />
@@ -52,9 +51,17 @@ export const Content: React.FC<{}> = () => {
             </a>
           </small>
           <a
+            href={about.linkedin}
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/angeliacuaca/resume"
+            className="with-icon"
+          >
+            <i className="fa-brands fa-linkedin fa-2xl" />
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={about.github}
             title="View this page on GitHub"
             className="with-icon"
           >

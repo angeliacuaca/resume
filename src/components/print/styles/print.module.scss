@@ -12,6 +12,10 @@
 
 .info {
   margin-bottom: var(--h3-margin);
+  text-align: right;
+  a {
+    margin: 0 5px;
+  }
 }
 
 .mb1 {
@@ -44,18 +48,11 @@
   justify-content: space-between;
   align-items: center;
 
-  :nth-child(2) {
-    text-align: center;
-    border-right: solid 1px;
-    border-left: solid 1px;
-    flex: 0.5;
-  }
-
   @media screen and (max-width: 600px) {
     flex-wrap: wrap;
-    & > h4 {
+    .info {
       width: 100%;
-      border: none !important;
+      text-align: left;
     }
   }
 }
