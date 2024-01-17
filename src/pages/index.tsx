@@ -22,7 +22,7 @@ const Home: NextPage = () => {
       window.removeEventListener("load", handleScreenWidth)
       window.removeEventListener("resize", handleScreenWidth)
     }
-  }, [])
+  }, [page])
 
   return page
 }
